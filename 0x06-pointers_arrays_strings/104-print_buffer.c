@@ -17,7 +17,7 @@ void print_line(char *c, int s, int l)
 		if (j <= s)
 			printf("%02x", c[l * 10 + j]);
 		else
-			printf(" ");
+			printf("  ");
 		if (j % 2)
 			putchar(' ');
 	}
@@ -30,7 +30,7 @@ void print_line(char *c, int s, int l)
 	}
 }
 /**
- * print_buffer - printd a buffer
+ * print_buffer - prints a buffer
  * @b: buffer to print
  * @size: size of buffer
  * Return: void
